@@ -51,4 +51,5 @@ filterDropDown.addEventListener("click", function(){
   });
 });
 
-
+// remove placeholder checkbox
+document.getElementById('selection').removeChild((document.getElementById('hidden-checkbox')))
