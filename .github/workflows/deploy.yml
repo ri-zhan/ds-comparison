@@ -48,7 +48,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: _site
+          source-dir: .
           wait-for-pages-deployment: true
 
       - name: Install and Build
@@ -61,6 +61,6 @@ jobs:
         if: github.event_name == 'push'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: _site
+          folder: site
           clean-exclude: pr-preview/
           force: false
