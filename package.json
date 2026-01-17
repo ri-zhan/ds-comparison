@@ -1,0 +1,20 @@
+{
+  "name": "ds-comparison",
+  "version": "1.0.0",
+  "description": "Design system component comparison.",
+  "homepage": "https://github.com/ri-zhan/ds-comparison#readme",
+  "bugs": {
+    "url": "https://github.com/ri-zhan/ds-comparison/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ri-zhan/ds-comparison.git"
+  },
+  "license": "ISC",
+  "author": "ri zhan",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm test"
+  }
+}
