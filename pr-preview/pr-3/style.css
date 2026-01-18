@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 2rem;
+}
+
+.content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(8, 1fr);
+    width: 100%;
+}
+
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    grid-column: span 2;
+    gap: 0.925rem;
+    padding: 1rem;
+    > div {
+        display: flex;
+        gap: 0.15rem;
+    }
+}
+
+.comparison-table {
+    grid-column: 3/9;
+    display: flex;
+    border: solid black;
+    border-width: 0 0 1px 1px;
+    margin-right: 1px;
+}
+
+.comparison-table-content, .comparison-table-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.comparison-table-content {
+    overflow-x: scroll;
+}
+
+.comparison-table-header-cells, .items {
+    display: flex;
+    flex-direction: column;
+    > td, th {
+        height: 100px;
+        padding: 1rem;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+    }
+    > th {
+        width: auto;
+        display: flex;
+        background-color: lightgrey;
+    }
+    > :nth-child(2) {
+        height: 150px;
+    }
+    > :first-child {
+        background-color: pink;
+    }
+}
+
+.items {
+    min-width: 200px;
+    &:nth-child(even) {
+        background: lightgray !important;
+    }
+}
